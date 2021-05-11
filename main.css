@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    font-family: Tahoma;
+    color: #353535
+}
+a {
+    color: #00000;
+    text-decoration: none;
+}
+a:hover {
+    color: #909090;
+}
+p {
+    line-height: 1.6em;
+    text-align: left;
+}
+
+.current {
+    color: #909090;
+}
+#header {
+    padding: 30px;
+    text-align: center;
+}
+#header img {
+    height: 40px;
+}
+#navbar {
+    text-align: center;
+}
+#navbar ul {
+    padding: 0px;
+}
+#navbar li {
+    display: inline-block;
+    margin: 0px 10px
+}
+#article {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 10%
+    
+}
