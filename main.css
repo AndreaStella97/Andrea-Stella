@@ -80,15 +80,22 @@ p {
 
 @media (max-width: 767px) {
     body {
-        color: black
+        font-weight: normal;
+    }
+    #header h1 {
+        font-weight: normal;
+        font-size: 1.1em;
+        letter-spacing: 5px;
+    }
+    #navbar {
+        padding: 0px 5%;
     }
     #navbar li {
         display: inline-block;
         margin: 0px 5px
     }
-    #header h1 {
-        font-size: 1.1em;
-        letter-spacing: 5px;
+    #article {
+        padding: 20px 7%
     }
     .roundImg {
         -moz-border-radius: 100%;
