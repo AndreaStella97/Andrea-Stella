@@ -80,7 +80,11 @@ p {
 
 @media (max-width: 767px) {
     body {
-        font-weight: normal;
+        color: black
+    }
+    #navbar li {
+        display: inline-block;
+        margin: 0px 5px
     }
     #header h1 {
         font-size: 1.1em;
