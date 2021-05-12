@@ -177,5 +177,9 @@ button {
         font-weight: normal;
         color: #353535
     }
+    .form {
+        width: 94%;
+        padding: 0 3%;
+    }
      
 }
