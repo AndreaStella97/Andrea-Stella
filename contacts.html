@@ -20,14 +20,14 @@
             </ul>
         </nav>
         <article id="article">
-            <form class="form">
+            <form class="form" action="sendmail.php" method="post">
                 <h1>Contact me</h1>
                 <label for="name">Full Name</label>
-                <input type="text" id="name">
+                <input type="text" id="name" name="name">
                 <label for="email">E-mail</label>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email">
                 <label for="message">Message</label>
-                <textarea id="message"></textarea>
+                <textarea id="message" name="message"></textarea>
                 <button type="submit" class="btn-submit">Submit</button>
             </form>
         </article>
