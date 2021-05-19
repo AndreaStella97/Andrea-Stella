@@ -14,23 +14,25 @@
             </header>
             <nav id="navbar">
                 <ul>
-                    <li><a href="index.html" class="current">Chi sono</a></li>
+                    <li><a href="index.html">Chi sono</a></li>
                     <li><a href="abilita.html">Abilità</a></li>
                     <li><a href="esperienze.html">Esperienze</a></li>
                     <li><a href="video.html">Video</a></li>
-                    <li><a href="contatti.html">Contatti</a></li>
+                    <li><a href="contatti.html" class="current">Contatti</a></li>
                 </ul>
             </nav>
         </div>
         <article id="article">
-            <h1 class="title">Chi sono</h1>
-            <img src="images/profile.jpg" class="roundImg">
-            <p>
-                Sono Andrea Stella, siciliano, classe 1997, laureato alla triennale di Ingegneria Elettronica e Informatica presso l'Università di Pavia.<br>
-                Attualmente vivo a Pavia dove frequento la magistrale in Computer Engineering, percorso Data Science.<br><br>
-                Sono un aspirante Data Scientist ma attualmente lavoro come sviluppatore web. Sono un programmatore con una buona conoscenza delle tecniche di front-end e di back-end.<br><br>
-                Sono una persona molto costante che ama l'ordine, la qualità ed è molto attenta ai piccoli dettagli. Inoltre mi piace lavorare in team, si impara più velocemente e molto di più. 
-            </pa
+            <form class="form" action="sendmail.php" method="post">
+                <h1 class="title">Contatti</h1>
+                <label for="name">Nome e cognome</label>
+                <input type="text" id="name" name="name">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Messaggio</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit" class="btn-submit">Invia</button>
+            </form>
             <br><br><br><br>
         </article>
         <section id="footer">
@@ -40,4 +42,3 @@
         </section>
     </body>
 </html>
-
