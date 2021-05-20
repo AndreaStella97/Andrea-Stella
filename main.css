@@ -47,7 +47,7 @@ h1,h2,h3,h4 {
 }
 
 #header h1 {
-    font-size: 2.8em;
+    font-size: 2em;
     font-weight: lighter;
     color: #686868;
     letter-spacing: 5px
@@ -93,7 +93,7 @@ h1,h2,h3,h4 {
     max-width: 800px;
     margin: auto;
     padding: 20px 10%;
-    margin-top: 180px;
+    margin-top: 140px;
 }
 
 .roundImg {
@@ -212,6 +212,7 @@ button {
 .video iframe,
 .video object,
 .video embed {
+    z-index: -1;
     height: 80%;
     left: 10%;
     position: absolute;
@@ -221,6 +222,12 @@ button {
     box-shadow: 0 1px 1px 0 rgb(66 66 66 / 8%), 0 1px 3px 1px rgb(66 66 66 / 16%);
 }
 
+.date {
+    font-weight: lighter;
+    font-size: 0.9em;
+    margin-top: 6px;
+}
+
 .section {
     width: 90%;
     margin: auto;
@@ -228,39 +235,71 @@ button {
     border-bottom: 2px #bbbbbb solid;
 }
 
-.description-table table {
+.two-columns-table table {
     width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-.description-table table tr td:first-child {
+.two-columns-table table tr td:first-child {
     width: 40%; 
     font-weight: normal;
     font-size: 1.1em;
 }
 
-.description-table table tr td:last-child {
+.two-columns-table table tr td:last-child {
     padding-left: 5%;
 }
 
-.description-table table tr td{
+.two-columns-table table tr td{
     vertical-align: top;
-    padding-bottom: 5%;
+    padding-bottom: 40px;
 }
 
-.description-table table tr {
+.two-columns-table table tr {
     margin-bottom: 25%;
 }
 
-.date {
-    font-weight: lighter;
-    font-size: 0.9em;
-    margin-top: 6px;
+.two-columns-table h2 {
+    color: red;
+   
+}
+
+.four-columns-table table {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.four-columns-table table tr td:nth-child(1),
+.four-columns-table table tr td:nth-child(3){ 
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+.four-columns-table table tr td:nth-child(3){ 
+    padding-left: 10px
+}
+
+.four-columns-table table tr td:nth-child(4){ 
+    text-align: right
 }
 
 
-@media (min-width: 768px) and (max-width: 980px) {
-
+.four-columns-table table tr td{
+    vertical-align: top;
+    padding-bottom: 40px;
+    width: 25%;
 }
+
+.four-columns-table table tr {
+    margin-bottom: 25%;
+}
+
+.four-columns-table h2 {
+    color: red;
+}
+
 
 @media (max-width: 767px) {
     body {
@@ -283,11 +322,12 @@ button {
     }
     #navbar li {
         display: inline-block;
-        margin: 0px 5px
+        margin: 0px 5px;
+        margin-top: 8px;
     }
     #article {
         padding: 20px 7%;
-        margin-top: 110px;
+        margin-top: 124px;
     }
     .roundImg {
         -moz-border-radius: 100%;
@@ -319,16 +359,45 @@ button {
         top: 0;
         width: 94%;
     }
-    .description-table table tr td:first-child {
+    .two-columns-table table tr td:first-child {
         font-weight: bold;
         width: 100%
     }
-    .description-table table tr td{
+    .two-columns-table table tr td{
         display: block;
     }
-    .description-table table tr td:last-child {
+    .two-columns-table table tr td:last-child {
         padding-left: 0;
     }
+    
+    .four-columns-table table tr td{
+        display: block;
+        padding-bottom: 0px
+    }
+    .four-columns-table table tr td:nth-child(1),
+    .four-columns-table table tr td:nth-child(3){
+        width: 50%;
+    }
+        
+    .four-columns-table table tr td:nth-child(2),
+    .four-columns-table table tr td:nth-child(4){
+        margin-bottom: 20px;
+        position: relative;
+        text-align: right;
+        bottom: 22px;
+        z-index: -1;
+        width: 100%;
+    }
+   
+    .four-columns-table table tr td:nth-child(3){ 
+        padding-left: 0
+    }
+    
+    
+    
+   
+    
+    
 
      
 }

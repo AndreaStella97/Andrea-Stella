@@ -24,22 +24,10 @@
         </div>
         <article id="article">
             <?php
-                $adminEmail = 'andrea.stella02@universitadipavia.it';
+                $adminEmail = 'andrea.stella3797@gmail.com';
                 $userEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
                 $name = $_POST['name'];
                 $message = $_POST['message'];
-                $userMessage = '
-                  <html>
-                    <head>
-                      <title>Grazie per avermi contattato</title>
-                    </head>
-                    <body>
-                      <h1>Grazie per avermi contattato</h1>
-                      <p>La tua richiesta è stata inoltrata. Ti risponderò al più presto.</p>
-                      <p>Andrea Stella</p>
-                    </body>
-                  </html>
-                ';
                 $adminMessage = "
                   <html>
                     <head>
@@ -79,6 +67,7 @@
                         <div class=text-center>
                             <h1>Messaggio inviato con successo.</h1>
                             <h3>Grazie per avermi contattato!</h3>
+                            <p>Ti risponderò il prima possibile.</p>
                             <p>Torna alla pagina <a href='index.html'>Chi sono</a>.</p>
                         </div>
                         ";
